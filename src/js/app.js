@@ -6,7 +6,7 @@ const formError = document.querySelector("#form-error");
 const removeButton = document.querySelector("#remove-all");
 const removeCompletedButton = document.querySelector("#remove-completed");
 
-taskInput.addEventListener("input", function() {
+taskInput.addEventListener("input", function () {
   if (taskInput.value) {
     formActive.classList.add('true');
   } else {
@@ -28,7 +28,7 @@ const loadTasks = () => {
         <button class="btn__remove-task">X</button>
       `;
       list.appendChild(item);
-      
+
       const input = item.querySelector("input");
       input.addEventListener("change", () => {
         saveTasks();

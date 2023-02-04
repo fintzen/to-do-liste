@@ -57,8 +57,8 @@ li {
     @media (min-width: $screen-xl) {
         font-size: calc(16 / 1440 * 100vw);
     }
-    
-    input{
+
+    input {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
