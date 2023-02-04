@@ -1,0 +1,98 @@
+.to-do-list {
+    display: grid;
+    grid-template-columns: calc(25 / 375 * 100vw) repeat(12, 1fr) calc(25 / 375 * 100vw);
+
+    @media (min-width: $screen-xl) {
+        grid-template-columns: 1fr repeat(12, calc((var(--screen-xl) - 182px) / 12)) 1fr;
+    }
+}
+
+.to-do-list__content {
+    position: relative;
+    display: unset;
+    grid-column-start: 2;
+    grid-column-end: 14;
+
+    @media (min-width: $screen-xl) {
+        grid-column-start: 3;
+        grid-column-end: 13;
+    }
+}
+
+.to-do-list__form {
+    display: flex;
+    position: relative;
+
+    input {
+        border: 1px solid $black;
+        border-radius: 5px;
+        width: 100%;
+        height: calc(60 / 375 * 100vw);
+        font-style: italic;
+        font-weight: 300;
+        font-size: calc(16 / 375 * 100vw);
+        padding-left: 25px;
+
+        @media (min-width: $screen-xl) {
+            font-size: calc(16 / 1440 * 100vw);
+            height: calc(60 / 1440 * 100vw);
+            padding-left: calc(25 / 1440 * 100vw);
+        }
+    }
+
+    button {
+        opacity: 0;
+        position: absolute;
+        right: 0;
+        width: 50px;
+        top: 0;
+        height: 100%;
+    }
+
+    &--active {
+        opacity: 0;
+        transition: all 0.125s;
+        position: absolute;
+        font-style: italic;
+        font-weight: 300;
+        color: $gray;
+        top: 50%;
+        right: 50px;
+        transform: translateY(-50%);
+
+        &.true {
+            opacity: 1;
+        }
+    }
+
+    &--error {
+        padding-left: calc(15 / 375 * 100vw);
+        margin: 24px 0;
+        font-weight: 300;
+        color: rgb(251, 139, 138);
+
+        @media (min-width: $screen-xl) {
+            padding-left: calc(25 / 1440 * 100vw);
+        }
+    }
+}
+
+.to-do-list__btn {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    button {
+        font-weight: 700;
+        font-size: calc(16 / 375 * 100vw);
+        width: 100%;
+        background: none;
+        padding: 25px;
+        border: 0;
+
+        @media (min-width: $screen-xl) {
+            font-size: calc(16 / 1440 * 100vw);
+        }
+
+    }
+
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="de" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/assets/css/app.css" rel="stylesheet">
+    <title>To-Do Liste</title>
+</head>
+
+<body>
+    <div id="app">
+
+        <section class="to-do-list">
+            <div class="to-do-list__content">
+                <h1>Let's get this done.</h1>
+                <h2>You may delay, but time will not.</h2>
+                <form id="form" class="to-do-list__form">
+                    <input type="text" id="task" placeholder="What needs to get done?">
+                    <button type="submit">Add</button>
+                    <span id="form--active" class="to-do-list__form--active">press enter</span>
+                </form>
+                <p class="to-do-list__form--error" id="form-error"></p>
+                <ul id="list"></ul>
+                <div class="to-do-list__btn">
+                    <button id="remove-completed" class="btn__clear-completed">Clear completed</button>
+                    <button id="remove-all" class="btn__clear-all">Clear all</button>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="/assets/js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+html,
+body,
+input,
+button {
+    margin: 0;
+    font-family: 'Roboto Condensed';
+}
+
+h1 {
+    font-weight: 700;
+    font-size: calc(36 / 375 * 100vw);
+    margin: 80px 0 0;
+
+    @media (min-width: $screen-xl) {
+        font-size: calc(42 / 1440 * 100vw);
+    }
+}
+
+h2 {
+    font-weight: 400;
+    font-style: italic;
+    font-size: calc(24 / 375 * 100vw);
+    position: relative;
+    padding-left: 30px;
+    margin: calc(10 / 375 * 100vw) 0 50px;
+
+    @media (min-width: $screen-xl) {
+        padding-left: 65px;
+        font-size: calc(26 / 1440 * 100vw);
+        margin: calc(24 / 1440 * 100vw) 0 50px;
+    }
+
+    &::before {
+        content: "\A";
+        background: $light-petrol;
+        height: 4px;
+        width: 19px;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+
+        @media (min-width: $screen-xl) {
+            width: 50px;
+            height: 12px;
+        }
+    }
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 20px 0;
+    font-size: calc(16 / 375 * 100vw);
+
+    @media (min-width: $screen-xl) {
+        font-size: calc(16 / 1440 * 100vw);
+    }
+    
+    input{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    div {
+        padding-left: 25px;
+    }
+
+    label {
+        padding-left: 35px;
+    }
+}
+
+li {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    border-radius: 5px;
+    box-shadow: 0 6px 10px $light-gray;
+}
+
+.btn__remove-task {
+    background: none;
+    padding-right: 25px;
+    border: 0;
+    font-weight: 400;
+    font-size: 16px;
+    color: $gray;
+}

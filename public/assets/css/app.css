@@ -1,0 +1,245 @@
+:root {
+  --screen-sm: 375px;
+  --screen-md: 768px;
+  --screen-lg: 1024px;
+  --screen-xl: 1440px;
+  --screen-2xl: 1900px;
+  --screen-3xl: 2500px;
+}
+
+/* roboto-condensed-300 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 300;
+  src: url(/fonts/roboto-condensed-v25-latin-300.eot?b0b44f2ddc09fd78bbacf5257c2caef5); /* IE9 Compat Modes */
+  src: url(/fonts/roboto-condensed-v25-latin-300.eot?b0b44f2ddc09fd78bbacf5257c2caef5?#iefix) format("embedded-opentype"), url(/fonts/roboto-condensed-v25-latin-300.woff2?f4aede0d15d1ee53fe3f14c936fd7250) format("woff2"), url(/fonts/roboto-condensed-v25-latin-300.woff?8b345254281c6d2b8f1fce2652aaec20) format("woff"), url(/fonts/roboto-condensed-v25-latin-300.ttf?0fcf84d40c5a5fb7e15d1122f2a383d0) format("truetype"), url(/fonts/roboto-condensed-v25-latin-300.svg?ecf0023526c5257f085b225462780255#RobotoCondensed) format("svg"); /* Legacy iOS */
+}
+/* roboto-condensed-300italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto Condensed";
+  font-style: italic;
+  font-weight: 300;
+  src: url(/fonts/roboto-condensed-v25-latin-300italic.eot?1b069ee30d202bad71dcc65281ab62f5); /* IE9 Compat Modes */
+  src: url(/fonts/roboto-condensed-v25-latin-300italic.eot?1b069ee30d202bad71dcc65281ab62f5?#iefix) format("embedded-opentype"), url(/fonts/roboto-condensed-v25-latin-300italic.woff2?641a9c667145e44c09f798494c22787d) format("woff2"), url(/fonts/roboto-condensed-v25-latin-300italic.woff?a7819140c34b1845abfc1b10a4706f40) format("woff"), url(/fonts/roboto-condensed-v25-latin-300italic.ttf?030d222557c4a4b4d8478b19ccbce96b) format("truetype"), url(/fonts/roboto-condensed-v25-latin-300italic.svg?1e0b8191501e19574df2dc031636db9f#RobotoCondensed) format("svg"); /* Legacy iOS */
+}
+/* roboto-condensed-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  src: url(/fonts/roboto-condensed-v25-latin-regular.eot?261dc3f135d2ba91fb0ae36b2f769de8); /* IE9 Compat Modes */
+  src: url(/fonts/roboto-condensed-v25-latin-regular.eot?261dc3f135d2ba91fb0ae36b2f769de8?#iefix) format("embedded-opentype"), url(/fonts/roboto-condensed-v25-latin-regular.woff2?bb7a4e73944870e385e13741e4ab1a20) format("woff2"), url(/fonts/roboto-condensed-v25-latin-regular.woff?6edcf4aeb769818e21aaca40ec6c2c94) format("woff"), url(/fonts/roboto-condensed-v25-latin-regular.ttf?0d0e892d77350387caddd6bd093bb731) format("truetype"), url(/fonts/roboto-condensed-v25-latin-regular.svg?8bbcf46feb162b768a15289dda0db16e#RobotoCondensed) format("svg"); /* Legacy iOS */
+}
+/* roboto-condensed-italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto Condensed";
+  font-style: italic;
+  font-weight: 400;
+  src: url(/fonts/roboto-condensed-v25-latin-italic.eot?8a3485a31f3aa03937d2e016a42eb1be); /* IE9 Compat Modes */
+  src: url(/fonts/roboto-condensed-v25-latin-italic.eot?8a3485a31f3aa03937d2e016a42eb1be?#iefix) format("embedded-opentype"), url(/fonts/roboto-condensed-v25-latin-italic.woff2?12ce041d695984c11669b0003b22ae6b) format("woff2"), url(/fonts/roboto-condensed-v25-latin-italic.woff?c1e7bf23fb0124a207705bf9943e59a1) format("woff"), url(/fonts/roboto-condensed-v25-latin-italic.ttf?2f87d10800eab48fa37c08c3b0c61987) format("truetype"), url(/fonts/roboto-condensed-v25-latin-italic.svg?0ecbef102d482258e7279e6c8c9d72bf#RobotoCondensed) format("svg"); /* Legacy iOS */
+}
+/* roboto-condensed-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  src: url(/fonts/roboto-condensed-v25-latin-700.eot?c23f4320a99671220a8d4446a9e6f478); /* IE9 Compat Modes */
+  src: url(/fonts/roboto-condensed-v25-latin-700.eot?c23f4320a99671220a8d4446a9e6f478?#iefix) format("embedded-opentype"), url(/fonts/roboto-condensed-v25-latin-700.woff2?6c26e7ba325616ba4252428032457176) format("woff2"), url(/fonts/roboto-condensed-v25-latin-700.woff?45d1ce7e4b9ea693389eb3529ab27b0b) format("woff"), url(/fonts/roboto-condensed-v25-latin-700.ttf?21d5ac766742db5e6375ce74025f3724) format("truetype"), url(/fonts/roboto-condensed-v25-latin-700.svg?7d286143e6606e65ec9d5b347739eb24#RobotoCondensed) format("svg"); /* Legacy iOS */
+}
+html,
+body,
+input,
+button {
+  margin: 0;
+  font-family: "Roboto Condensed";
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 9.6vw;
+  margin: 80px 0 0;
+}
+@media (min-width: 1440px) {
+  h1 {
+    font-size: 2.9166666667vw;
+  }
+}
+
+h2 {
+  font-weight: 400;
+  font-style: italic;
+  font-size: 6.4vw;
+  position: relative;
+  padding-left: 30px;
+  margin: 2.6666666667vw 0 50px;
+}
+@media (min-width: 1440px) {
+  h2 {
+    padding-left: 65px;
+    font-size: 1.8055555556vw;
+    margin: 1.6666666667vw 0 50px;
+  }
+}
+h2::before {
+  content: "\a";
+  background: rgb(80, 231, 211);
+  height: 4px;
+  width: 19px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media (min-width: 1440px) {
+  h2::before {
+    width: 50px;
+    height: 12px;
+  }
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 20px 0;
+  font-size: 4.2666666667vw;
+}
+@media (min-width: 1440px) {
+  ul,
+  li {
+    font-size: 1.1111111111vw;
+  }
+}
+ul input,
+li input {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+ul div,
+li div {
+  padding-left: 25px;
+}
+ul label,
+li label {
+  padding-left: 35px;
+}
+
+li {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  border-radius: 5px;
+  box-shadow: 0 6px 10px rgb(239, 237, 237);
+}
+
+.btn__remove-task {
+  background: none;
+  padding-right: 25px;
+  border: 0;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgb(102, 102, 102);
+}
+
+.to-do-list {
+  display: grid;
+  grid-template-columns: 6.6666666667vw repeat(12, 1fr) 6.6666666667vw;
+}
+@media (min-width: 1440px) {
+  .to-do-list {
+    grid-template-columns: 1fr repeat(12, calc((var(--screen-xl) - 182px) / 12)) 1fr;
+  }
+}
+
+.to-do-list__content {
+  position: relative;
+  display: unset;
+  grid-column-start: 2;
+  grid-column-end: 14;
+}
+@media (min-width: 1440px) {
+  .to-do-list__content {
+    grid-column-start: 3;
+    grid-column-end: 13;
+  }
+}
+
+.to-do-list__form {
+  display: flex;
+  position: relative;
+}
+.to-do-list__form input {
+  border: 1px solid #000;
+  border-radius: 5px;
+  width: 100%;
+  height: 16vw;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 4.2666666667vw;
+  padding-left: 25px;
+}
+@media (min-width: 1440px) {
+  .to-do-list__form input {
+    font-size: 1.1111111111vw;
+    height: 4.1666666667vw;
+    padding-left: 1.7361111111vw;
+  }
+}
+.to-do-list__form button {
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  width: 50px;
+  top: 0;
+  height: 100%;
+}
+.to-do-list__form--active {
+  opacity: 0;
+  transition: all 0.125s;
+  position: absolute;
+  font-style: italic;
+  font-weight: 300;
+  color: rgb(102, 102, 102);
+  top: 50%;
+  right: 50px;
+  transform: translateY(-50%);
+}
+.to-do-list__form--active.true {
+  opacity: 1;
+}
+.to-do-list__form--error {
+  padding-left: 4vw;
+  margin: 24px 0;
+  font-weight: 300;
+  color: rgb(251, 139, 138);
+}
+@media (min-width: 1440px) {
+  .to-do-list__form--error {
+    padding-left: 1.7361111111vw;
+  }
+}
+
+.to-do-list__btn {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.to-do-list__btn button {
+  font-weight: 700;
+  font-size: 4.2666666667vw;
+  width: 100%;
+  background: none;
+  padding: 25px;
+  border: 0;
+}
+@media (min-width: 1440px) {
+  .to-do-list__btn button {
+    font-size: 1.1111111111vw;
+  }
+}
